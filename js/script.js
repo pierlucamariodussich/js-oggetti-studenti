@@ -12,7 +12,10 @@ var studente ={
 
 for( var info in studente){
   console.log('la proprietà '+ info + ' ha come valore: '+ studente[info]);
+  $('#result').append('La proprietà ' + info + ' ha come valore: ' + studente[info] + '<br>');
 }
+
+
 
 /* Creare un array di oggetti di
 studenti. Ciclare su tutti gli
@@ -34,12 +37,17 @@ var studentiArray =
 
 ];
 
-console.log(studentiArray)
 
-for(var i=0; i < studentiArray.length; i++){
+
+
+/*for(var i=0; i < studentiArray.length; i++){
   console.log('il nome dello studente è '+ studentiArray[i].nome);
   console.log('il cognome dello studente è '+ studentiArray[i].cognome);
-}
+  $('#result2').append('il nome dello studente è '+ studentiArray[i].nome + '<br>');
+  $('#result3').append('il cognome dello studente è '+ studentiArray[i].cognome + '<br>');
+} */
+
+console.log(studentiArray)
 
 /*Dare la possibilità all’utente attraverso
  3 prompt di aggiungere un nuovo oggetto
@@ -56,3 +64,12 @@ for(var i=0; i < studentiArray.length; i++){
 
  console.log(nuovoStudente);
  console.log(studentiArray);
+
+
+
+ for(var i=0; i < studentiArray.length; i++){
+   console.log('il nome dello studente è '+ studentiArray[i].nome);
+   console.log('il cognome dello studente è '+ studentiArray[i].cognome);
+   $('#result2').append('il nome dello studente è '+ studentiArray[i].nome + '<br>');
+   $('#result3').append('il cognome dello studente è '+ studentiArray[i].cognome + '<br>');
+ }
